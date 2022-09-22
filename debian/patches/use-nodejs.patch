@@ -1,0 +1,11 @@
+Description: Use nodejs
+Forwarded: not-needed
+
+--- a/bin/dot-packer
++++ b/bin/dot-packer
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env node
++#!/usr/bin/node
+ /* Continuation of https://github.com/Katahdin/dot-packer */
+ 
+ var program = require('commander'),

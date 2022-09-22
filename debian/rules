@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build --buildsystem=nodejs
+	help2man --no-discard-stderr --no-info --name 'Performent JavaScript templating' bin/dot-packer >dottojs.1

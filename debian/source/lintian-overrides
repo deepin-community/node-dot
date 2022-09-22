@@ -1,0 +1,5 @@
+# false positive
+source-is-missing benchmarks/templating/doU.js
+source-is-missing doU.js
+source-contains-prebuilt-javascript-object benchmarks/templating/doU.js
+source-contains-prebuilt-javascript-object doU.js
